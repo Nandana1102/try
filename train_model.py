@@ -25,16 +25,22 @@ lrmodel.fit(X_train,y_trian)
 
 # print(rdcmodel.predict([[5.1,3.5,1.4,0.2]]))
 
-with open("rdcmodel.pkl","wb") as f:
-    pickle.dump(rdcmodel,f)
-
 with open("leencoder.pkl","wb") as f:
     pickle.dump(le,f)
 
+# RandomForest
+#with open("rdcmodel.pkl","wb") as f:
+#    pickle.dump(rdcmodel,f)
+
+
+
+# Decision tree
 # with open("drcmodel.pkl","wb") as f:
 #     pickle.dump(drcmodel,f)
 
-# with open("lrmodel.pkl","wb") as f:
-#     pickle.dump(lrmodel,f)
 
-print("Model trained and saved as rdcmodel.pkl")
+# Linear Regression
+with open("lrmodel.pkl","wb") as f:
+    pickle.dump(lrmodel,f)
+
+print("Model trained and saved as model.pkl")
